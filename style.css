@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+
+}
+html ,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.main{
+ height: 100%;
+ width: 100%;
+ position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+}.navbar h1{
+   font-size: 2.5vw;
+   font-weight:600;
+   padding: 0 4vw;
+}
+.navitems{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 5vw;
+    font-size: 20px;
+}
+.navitems #signIn{
+    padding: .5vw 1vw;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #E7A5E2;
+}
+.navitems h4{
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0.1vh 0;
+
+}
+.navitems h4:hover{
+    border-bottom: 2px solid black;
+    transition:0.4s;
+}
+.menuicon{
+    display: none;
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+    position: relative;
+
+}
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4vw 4vw;
+}
+.left h2{
+   font-size: 3vw;
+   font-style: inherit;
+   font-weight: 700;
+   line-break:auto;
+   line-height: 10vh;
+}
+.left span{
+    color:#8e3287 ;
+}
+.left p{
+    font-size: 1.5vw;
+    padding: 2vw 0;
+    text-align:left;
+    font-style: inherit; 
+    word-wrap: break-word;
+    width: 80%;
+    color: rgb(94, 92, 92);
+}
+.learn{
+    border: 0;
+    outline: 0;
+    padding: 1vw 2vw;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #E7A5E2;
+}
+.right{
+    height: 100%;
+    width: 50%;
+}
+.right .rightimg{
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 90%;
+width: 90%;
+}
+
+
+
+@media (max-width: 600px){
+
+.navbar{
+    height: 60px;
+}
+.navbar h1{
+    font-size: 6vw;
+    font-weight:600;
+    padding: 0 6vw;
+}
+.navbar .menuicon{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.navitems h4{
+    display: none;
+}
+.navitems #signIn{
+    display: none;
+}
+.navitems .menuicon{
+    display: block;
+    padding: 0 1.5vw;
+    font-weight: 600;
+}
+.content{
+height: calc(100% - 60px);
+display: flex;
+flex-direction: column;
+}
+.left{
+    width: 100%;
+    padding: 6vw 6vw;
+}
+.left h2{
+    font-size:1.6rem;
+    line-height: 6vh;
+    width:80%;
+}
+.left p{
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 3vw 0;
+    width: 100%;
+    color: rgb(115, 112, 112);
+}
+.learn{
+    margin-top: 1.2rem;
+    padding: 1.5vw 2vw;
+    font-size: 1.2rem;
+}
+.right{
+    height: 90%;
+    width: 100%;
+}
+.right .rightimg{
+height: 90%;
+width: 90%;
+padding: 0 6vw;
+}
+}
